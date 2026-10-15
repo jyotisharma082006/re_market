@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sell | ReMarket</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html"><span>re</span>Market</a><nav class="main-nav"><a href="index.html">Home</a><a href="products.html">Products</a><a class="active" href="sell.html">Sell</a><a href="dashboard.html">My Listings</a><a href="about.html">About</a></nav><div class="nav-right"><div id="headerActions"></div></div></div></header>
+<main class="auth-page"><div class="container form-layout"><div class="form-intro"><p class="eyebrow">SELL WITH REMARKET</p><h1>Give your unused product a new owner.</h1><p>Add clear details, set a fair price and publish your listing.</p><div class="info-box"><strong>Seller tips</strong><span>Use a clear product name.</span><span>Choose the correct category.</span><span>Mention the real condition.</span><span>Add a useful description.</span></div></div>
+<div class="form-card"><h2>Product Details</h2><p class="muted">All fields are required except the optional location.</p><form id="sellForm">
+<label>Product Name<input id="sellName" required placeholder="e.g. Samsung Galaxy S23"></label>
+<label>Category<select id="sellCategory" required><option value="">Select category</option><option>Electronics</option><option>Mobiles</option><option>Vehicles</option><option>Furniture</option><option>Home Appliances</option></select></label>
+<label>Price (₹)<input id="sellPrice" type="number" min="1" required placeholder="Enter price"></label>
+<label>Condition<select id="sellCondition" required><option value="">Select condition</option><option>Excellent</option><option>Good</option><option>Fair</option></select></label>
+<label>Location<input id="sellLocation" placeholder="City"></label>
+<label>Description<textarea id="sellDescription" rows="5" required placeholder="Describe the product..."></textarea></label>
+<label>Product Image<input id="sellImage" type="file" accept="image/*" required></label>
+<div id="imagePreview" class="upload-preview">Image preview will appear here</div>
+<button class="btn btn-dark full" type="submit">Publish Product</button>
+<div id="sellNotice" class="notice"></div>
+</form></div></div></main>
+<footer class="site-footer"><div class="footer-bottom"><div class="container"><span>© 2026 ReMarket. All rights reserved.</span></div></div></footer>
+<script src="js/script.js"></script>
+</body></html>

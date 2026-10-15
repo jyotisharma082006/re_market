@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ReMarket | Second-Hand Marketplace</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html"><span>re</span>Market</a>
+    <nav class="main-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="sell.html">Sell</a>
+      <a href="dashboard.html">My Listings</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="nav-right">
+      <button class="search-icon" onclick="focusHomeSearch()" aria-label="Search">⌕</button>
+      <div id="headerActions"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-main">
+      <div class="hero-overlay">
+        <p class="eyebrow light">SECOND-HAND MARKETPLACE</p>
+        <h1>Find useful things.<br>Give them a <span>new life.</span></h1>
+        <p class="hero-copy">Buy quality pre-owned products at better prices or sell the things you no longer need.</p>
+        <div class="hero-search">
+          <input id="homeSearch" type="search" placeholder="Search products, categories...">
+          <button onclick="searchFromHome()">⌕</button>
+        </div>
+        <div class="hero-buttons">
+          <a class="btn btn-gold" href="products.html">Browse Products</a>
+          <a class="btn btn-outline-light" href="sell.html">Sell an Item</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>35+</strong><small>Listings</small></div>
+          <div><strong>5</strong><small>Categories</small></div>
+          <div><strong>100%</strong><small>Simple & Secure</small></div>
+        </div>
+      </div>
+    </div>
+    <a class="featured-card" href="product-details.html?id=p1">
+      <span class="featured-tag">Featured</span>
+      <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85" alt="Dell laptop">
+      <div class="featured-info">
+        <p>Electronics</p>
+        <h2>Dell Inspiron Laptop</h2>
+        <strong>₹28,500</strong>
+        <div class="mini-meta"><span>◷ Good</span><span>⌖ Ludhiana</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">EXPLORE</p><h2>Shop by Category</h2></div>
+      <a href="products.html">View all categories →</a>
+    </div>
+    <div class="category-grid">
+      <a class="category-card" href="products.html?category=Electronics"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=85"><div><h3>Electronics</h3><p>Laptops, cameras & more</p><b>→</b></div></a>
+      <a class="category-card" href="products.html?category=Mobiles"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=85"><div><h3>Mobiles</h3><p>Phones, tablets & devices</p><b>→</b></div></a>
+      <a class="category-card" href="products.html?category=Vehicles"><img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=700&q=85"><div><h3>Vehicles</h3><p>Cars, bikes & scooters</p><b>→</b></div></a>
+      <a class="category-card" href="products.html?category=Furniture"><img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=85"><div><h3>Furniture</h3><p>Beds, sofas & tables</p><b>→</b></div></a>
+      <a class="category-card" href="products.html?category=Home Appliances"><img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=700&q=85"><div><h3>Home Appliances</h3><p>Fridges, ACs & more</p><b>→</b></div></a>
+    </div>
+  </div>
+</section>
+
+<section class="section products-section">
+  <div class="container">
+    <div class="section-head"><div><p class="eyebrow">CURATED FOR YOU</p><h2>Featured Products</h2></div><a href="products.html">View all products →</a></div>
+    <div id="featuredProducts" class="product-grid compact"></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div><a class="brand footer-brand" href="index.html"><span>re</span>Market</a><p>A simple marketplace for giving products a second life.</p></div>
+    <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="products.html">Products</a><a href="sell.html">Sell</a><a href="dashboard.html">My Listings</a><a href="about.html">About</a></div>
+    <div><h4>Categories</h4><a href="products.html?category=Electronics">Electronics</a><a href="products.html?category=Mobiles">Mobiles</a><a href="products.html?category=Vehicles">Vehicles</a><a href="products.html?category=Furniture">Furniture</a><a href="products.html?category=Home Appliances">Home Appliances</a></div>
+    <div><h4>Connect With Us</h4><p>Instagram &nbsp; Facebook &nbsp; YouTube</p></div>
+  </div>
+  <div class="footer-bottom"><div class="container"><span>© 2026 ReMarket. All rights reserved.</span><span>Privacy Policy &nbsp; | &nbsp; Terms & Conditions</span></div></div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

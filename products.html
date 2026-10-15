@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | ReMarket</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html"><span>re</span>Market</a>
+<nav class="main-nav"><a href="index.html">Home</a><a class="active" href="products.html">Products</a><a href="sell.html">Sell</a><a href="dashboard.html">My Listings</a><a href="about.html">About</a></nav>
+<div class="nav-right"><div id="headerActions"></div></div>
+</div></header>
+<main>
+<section class="page-hero"><div class="container"><p class="eyebrow">MARKETPLACE</p><h1>Browse Products</h1><p>Discover useful pre-owned products from different categories.</p></div></section>
+<section class="section">
+<div class="container">
+<div class="filters">
+<input id="searchInput" type="search" placeholder="Search product name...">
+<select id="categoryFilter"><option value="">All Categories</option><option>Electronics</option><option>Mobiles</option><option>Vehicles</option><option>Furniture</option><option>Home Appliances</option></select>
+<select id="conditionFilter"><option value="">All Conditions</option><option>Excellent</option><option>Good</option><option>Fair</option></select>
+</div>
+<div id="productCount" class="result-count"></div>
+<div id="product-list" class="product-grid"></div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><div class="footer-bottom"><div class="container"><span>© 2026 ReMarket. All rights reserved.</span><span>Second-hand made simple.</span></div></div></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
